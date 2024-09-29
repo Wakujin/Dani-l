@@ -1,5 +1,3 @@
-from operator import truediv
-
 name = ('Danil')
 print(name)
 age = 23
