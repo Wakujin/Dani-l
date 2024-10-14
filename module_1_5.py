@@ -1,4 +1,4 @@
-immutable_var = 1, True, "осень"
+immutable_var = (1, True, "осень")
 print(immutable_var)
 # immutable_var [0] = 2 - Кортеж не имеет свойства изменяться, в отличие от списка []
 mutable_list = [1, True, "осень"]
