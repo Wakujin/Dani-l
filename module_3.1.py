@@ -13,7 +13,7 @@ def string_info(string):
 
 def is_contains(string, list_of_search):
     count_calls()
-    return string.lower in (i.lower for i in list_of_search)
+    return string.lower() in (i.lower() for i in list_of_search)
 
 
 print(string_info('Voldemort'))
