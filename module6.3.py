@@ -53,8 +53,6 @@ class Duckbill(PoisonousAnimal, Bird, AquaticAnimal):
 
     def __init__(self, speed):
         super().__init__(speed)
-
-    def attack(self):
         super().attack()
 
 
