@@ -41,7 +41,7 @@ class AquaticAnimal(Animal):
     _DEGREE_OF_DANGER = 3
 
     def dive_in(self, dz):
-        self._cords[2] -= abs(dz) * self.speed / 2
+        self._cords[2] -= abs(dz) * self.speed // 2
 
 
 class PoisonousAnimal(Animal):
@@ -50,6 +50,12 @@ class PoisonousAnimal(Animal):
 
 class Duckbill(PoisonousAnimal, Bird, AquaticAnimal):
     sound = 'Click-click-click'
+
+    def __init__(self, speed):
+        super().__init__(speed)
+
+    def attack(self):
+        super().attack()
 
 
 print(Duckbill.mro())
