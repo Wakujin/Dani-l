@@ -1,6 +1,3 @@
-from pstats import count_calls
-
-
 class WordsFinder:
     def __init__(self, *file_names):
         self.file_names = list(file_names)
